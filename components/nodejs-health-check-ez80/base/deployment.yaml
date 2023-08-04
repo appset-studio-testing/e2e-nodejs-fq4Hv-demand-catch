@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-ez80
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/ysubrama_org/e2e-demos-sdob-tenant/e2e-nodejs/nodejs-health-check-ez80@sha256:b164d7472d6460c17936308720a95f6e77da81e3620f32b44881ce0d684ef5df
         name: my-nodejs
         ports:
         - containerPort: 3001
