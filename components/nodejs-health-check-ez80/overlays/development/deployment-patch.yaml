@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-ez80
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/ysubrama_org/e2e-demos-sdob-tenant/e2e-nodejs/nodejs-health-check-ez80@sha256:b164d7472d6460c17936308720a95f6e77da81e3620f32b44881ce0d684ef5df
+        name: my-nodejs
+        resources: {}
+status: {}
